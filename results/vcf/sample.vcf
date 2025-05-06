@@ -1,0 +1,2 @@
+variant call files from haplotype caller rule will be stored here.
+Note that these would be unfiltered gvcf files which are required for joint snp calling at a later step
