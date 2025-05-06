@@ -36,3 +36,37 @@ These steps are separated intentionally because they often require **manual deci
 ---
 
 ## 📁 Directory Structure
+
+data/                  # Trimmed FASTQ files
+reference/             # Reference genome (FASTA + index files)
+results/
+└── bam/             # Aligned and processed BAM files
+└── vcf/             # Per-sample GVCFs and joint VCFs
+logs/                  # Pipeline log files
+
+
+---
+
+## 💻 Requirements
+
+- Snakemake
+- BWA
+- SAMtools
+- GATK 4.x
+- Python 3
+- SLURM (for HPC execution)
+
+Optional tools:
+- Trimmomatic or fastp (for trimming before this pipeline)
+- bcftools, plink (for downstream filtering)
+
+---
+
+## 🚀 Usage Instructions
+
+1. Make sure all FASTQ files in `data/` are **adapter-trimmed**.
+2. Update the path to your reference genome in the `Snakefile`.
+3. Run the Snakemake pipeline:
+
+```bash
+snakemake --jobs 100 --cluster "sbatch --cpus-per-task={threads} --mem={resources.mem_mb} --time=24:00:00" --use-conda
