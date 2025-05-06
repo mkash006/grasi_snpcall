@@ -35,18 +35,6 @@ These steps are separated intentionally because they often require **manual deci
 
 ---
 
-## 📁 Directory Structure
-
-data/                  # Trimmed FASTQ files
-reference/             # Reference genome (FASTA + index files)
-results/
-└── bam/             # Aligned and processed BAM files
-└── vcf/             # Per-sample GVCFs and joint VCFs
-logs/                  # Pipeline log files
-
-
----
-
 ## 💻 Requirements
 
 - Snakemake
