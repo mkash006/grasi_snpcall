@@ -1,0 +1,1 @@
+this directory will contain results from bowtie rule of snakemake pipeline. Logs will contains alignment logs printed during bowtie.
