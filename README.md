@@ -6,9 +6,9 @@ This repository contains a pipeline for SNP discovery from GRAS-Di (Genotyping b
 
 ---
 
-## 🔧 Pipeline Overview
+##  Pipeline Overview
 
-### 📂 Snakefile: Per-sample GVCF Calling
+###  Snakefile: Per-sample GVCF Calling
 The `Snakefile` performs **per-sample variant calling** and generates **GVCF files** via GATK HaplotypeCaller. Key steps include:
 
 1. **Reference Indexing**
@@ -21,7 +21,7 @@ All outputs are organized in `results/`, and logs are saved in the `logs/` direc
 
 ---
 
-### 🧪 Separate `.sh` Scripts: Joint Genotyping & SNP Filtering
+###  Separate `.sh` Scripts: Joint Genotyping & SNP Filtering
 The shell scripts (`.sh` files) are used for **joint SNP calling and post-processing**, including:
 
 - **GATK GenotypeGVCFs**
@@ -35,7 +35,7 @@ These steps are separated intentionally because they often require **manual deci
 
 ---
 
-## 💻 Requirements
+##  Requirements
 
 - Snakemake
 - BWA
