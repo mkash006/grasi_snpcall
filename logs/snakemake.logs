@@ -1,3 +1,2 @@
-all the logs from snakemake pipeline plus additional snps required to conduct analysis post snakemake pipeline will be directed here. 
-spearate log directories for different snakemake rules will also be created.
-In future each step post snakemake will also be redirected to spearate log directory but rn i was lazy and they kinda go in the main log directory 
+All the logs (std error and stdout) from the snakemake pipeline, plus additional SNPs required to conduct analysis post snakemake pipeline, will be directed here. 
+Separate log directories for different Snakemake rules will contain all log files. 
